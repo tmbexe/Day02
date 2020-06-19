@@ -6,22 +6,32 @@
 /*   By: tmbexe <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/06/19 09:25:06 by tmbexe            #+#    #+#             */
-/*   Updated: 2020/06/19 10:29:37 by tmbexe           ###   ########.fr       */
+/*   Updated: 2020/06/19 12:08:56 by tmbexe           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 
+void ft_putchar(char c)
+{
+    putchar(c);
+}
+
+void ft_print_alphabet()
+{
+    char lt;
+    lt = 'a';
+
+    while (lt <= 'z')
+    {
+        ft_putchar(lt);
+        lt++;
+    }
+}
+
 int main()
 {
-	char letter;
+    ft_print_alphabet();
 
-	letter = 'a';
-	while(letter <= 'z')
-	{
-		putchar(letter);
-		letter++;
-	}
-
-	return 0;
+    return 0;
 }
